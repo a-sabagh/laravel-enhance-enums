@@ -14,25 +14,6 @@ composer require a-sabagh/laravel-enhance-enums
 
 ### 1. Create an Enum
 
-<?php
-
-namespace Workbench\App\Enums;
-
-use Enhance\Enums\Concerns\Translatable;
-
-enum PostStatus: string
-{
-    use Translatable;
-
-    public function namespace(): string
-    {
-        return 'eenums::';
-    }
-
-    case PUBLISH = 'publish';
-    case DRAFT   = 'draft';
-}
-
 ```php
 <?php
 
@@ -47,7 +28,6 @@ enum PostStatus: string
     case PUBLISH = 'publish';
     case DRAFT   = 'draft';
 }
-
 ```
 
 ### 2. Add Translations
@@ -69,7 +49,6 @@ return [
         'draft'   => 'پیش نویس',
     ],
 ];
-
 ```
 
 ### 3. Call `translate()`
@@ -78,5 +57,3 @@ return [
 PostStatus::PUBLISH->translate(); // returns "منتشر شده"
 PostStatus::DRAFT->translate();   // returns "پیش نویس"
 ```
-
-
