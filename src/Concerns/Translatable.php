@@ -21,7 +21,7 @@ trait Translatable
         $namespace = $this->namespace();
         $classPath = static::class;
         $value = $this->value;
-        
+
         return "{$namespace}enums.{$classPath}.{$value}";
     }
 }
