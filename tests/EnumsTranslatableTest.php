@@ -1,6 +1,6 @@
 <?php
 
-namespace Enhance\Enums\Concerns;
+namespace Enhance\Enums\Tests;
 
 use Enhance\Enums\EEnumsServiceProvider;
 use Orchestra\Testbench\TestCase;

@@ -2,6 +2,7 @@
 
 namespace Enhance\Enums\Concerns;
 
+/** @see \Enhance\Enums\Tests\EnumsTranslatableTest */
 trait Translatable
 {
     public function namespace(): string
