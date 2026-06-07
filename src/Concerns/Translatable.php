@@ -10,7 +10,7 @@ trait Translatable
         return '';
     }
 
-    public function translate(): string
+    public function translate(): ?string
     {
         $key = $this->getTranslationKey();
 
